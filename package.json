@@ -1,0 +1,15 @@
+{
+  "name": "oppgaveside",
+  "version": "1.0.0",
+  "description": "bahcelorside",
+  "main": "index.js",
+  "dependencies": {
+    "figlet": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bjørn",
+  "license": "ISC"
+}
