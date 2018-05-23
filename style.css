@@ -1,20 +1,39 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('./fonts/webfont.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/webfont.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 html {
   position: relative;
   min-height: 100%;
+  font-family: MyWebFont;
 }
-
+body {
+  margin: 50px 0 350px;
+  background-color: white; /*#61728e*/
+}
 
 
 header {
   text-align: center;
+  color: black;
 }
 header > h1 {
   font-size: 50px;
+  margin: 0;
+  margin-top: 15px;
 }
 header > h2 {
-  font-size: 40px;
+  font-size: 25px;
+  margin-bottom: 40px;
 }
-
+header > img {
+  max-width: 175px;
+}
 
 main {
   display: grid;
@@ -31,28 +50,89 @@ main {
   display: grid;
 }
 .pdfContainerOverskrift{
-  background-color: #f2f2f2;
+  background-color: #676d80; /*f2f2f2*/
 
 }
 .pdfContainerOverskrift:hover{
-  background-color: #e6e6e6;
+  background-color: #8d9eb7;
+
 }
 .pdfContainerOverskrift > h1 {
+
+  color: white;
+  margin: 20px;
   text-align: center;
+}
+.pdfContainerOverskrift > h1:hover {
+  cursor: pointer;
+
 }
 .pdfContainerInnhold {
   height: 0px;
   background-color: #d9d9d9;
 }
 
-
-
+i {
+    border: solid black;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 7px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.pointerContainer {
+  width: 5%;
+  display: table-cell;
+}
+.pointerContainer:hover {
+  color: white;
+}
 
 footer {
-  height: 150px;
+  height: 250px;
   width: 100%;
   left: 0;
   bottom: 0;
-  background-color: grey;
+  background-color: #676d80;
   position: absolute;
+  overflow: hidden;
+}
+footer > img {
+
+}
+#backgroundImgLeft{
+  position:absolute;
+  opacity: 0.2;
+  bottom: 30px;
+  width: 22.5%
+}
+#backgroundImgRight{
+  position:absolute;
+  opacity: 0.2;
+  right: 0;
+  bottom: 30px;
+  width: 22.5%
+}
+.profileBilde {
+  max-height: 150px;
+
+  margin: 30px;
+  margin-left: 42px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  opacity: 0.85;
+  border-radius: 15%;
+}
+#profilerContainer{
+  text-align: center;
+  display: table;
+  color: white;
+  margin: 0 auto;
+  background-color: #676d80;
+  z-index: 2;
+}
+.profilContainer {
+  display: table-cell;
 }
